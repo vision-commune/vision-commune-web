@@ -47,7 +47,7 @@ header{position:sticky;top:0;z-index:30;background:#f5f7f3ed;backdrop-filter:blu
 <div><div class="number">L'E-DITEUR · UN SERVICE WEB</div><h2 id="qali-title"><span class="title-line">POUR ÊTRE</span><span class="title-line">AU <em>NET</em></span></h2><p>Créez et administrez le site web de votre commune en toute sécurité et confidentialité. Une interface simple pour publier, actualiser et garder la main sur votre présence en ligne.</p>
 <div class="qali-actions"><button class="button" data-service="manage">Gérer mon site <span class="arrow" aria-hidden="true">↗</span></button><button class="button outline" data-service="create">Créer un site <span class="arrow" aria-hidden="true">↗</span></button></div>
 </div>
-<div class="web-art" aria-hidden="true"><div class="mock-browser"><div class="mock-top"><i></i><i></i><i></i></div><div class="mock-content"><div class="mock-town">Bienvenue à Clairval</div><div class="mock-bars"><i></i><i></i><i></i></div></div></div></div>
+<div class="web-art" aria-hidden="true"><div class="mock-browser"><div class="mock-top"><i></i><i></i><i></i></div><div class="mock-content"><div class="mock-town">Bienvenue à Fenioux</div><div class="mock-bars"><i></i><i></i><i></i></div></div></div></div>
 </div></section>
 </main>
 <footer><div class="shell foot"><span>© 2026 Vision-Commune · Représenter les territoires</span><span>Association en cours de constitution · <a href="mailto:contact@vision-commune.net">Contact</a></span></div></footer>
@@ -68,7 +68,7 @@ document.querySelectorAll('dialog').forEach(dialog=>dialog.addEventListener('cli
 document.getElementById('account-form').addEventListener('submit',e=>{e.preventDefault();document.getElementById('account-notice').textContent='La gestion des comptes n’est pas encore raccordée. Aucun identifiant n’a été envoyé ni enregistré.';});
 document.querySelectorAll('[data-service]').forEach(btn=>btn.addEventListener('click',()=>{const create=btn.dataset.service==='create';document.getElementById('service-heading').textContent=create?"Créer un site avec L'E-diteur":"Gérer mon site L'E-diteur";document.getElementById('service-copy').textContent=create?'Le parcours de création de votre site communal sera accessible ici.':'L’accès sécurisé à l’administration de votre site communal sera accessible ici.';serviceDialog.showModal();}));
 const nodes=[
-{n:'Clairval',t:0,x:.51,y:.42,r:9},{n:'Montelune',t:0,x:.27,y:.28,r:7},{n:'Belle-Rive',t:0,x:.74,y:.26,r:7},{n:'Bois-Joli',t:0,x:.76,y:.65,r:7},{n:'Val-des-Sources',t:0,x:.33,y:.72,r:7},{n:'Les Ormes',t:0,x:.12,y:.51,r:6},{n:'Hautepierre',t:0,x:.59,y:.82,r:6},
+{n:'Fenioux',t:0,x:.51,y:.42,r:9},{n:'Montelune',t:0,x:.27,y:.28,r:7},{n:'Belle-Rive',t:0,x:.74,y:.26,r:7},{n:'Bois-Joli',t:0,x:.76,y:.65,r:7},{n:'Val-des-Sources',t:0,x:.33,y:.72,r:7},{n:'Les Ormes',t:0,x:.12,y:.51,r:6},{n:'Hautepierre',t:0,x:.59,y:.82,r:6},
 {n:'Camille Roussel',t:1,x:.44,y:.18,r:5},{n:'Noé Lemaire',t:1,x:.66,y:.50,r:5},{n:'Lina Derval',t:1,x:.17,y:.76,r:5},{n:'Sacha Morel',t:1,x:.88,y:.42,r:5},{n:'Alix Perrin',t:1,x:.49,y:.65,r:5},{n:'Maël Aubry',t:1,x:.14,y:.20,r:5},
 {n:'CC des Trois-Vallées',t:2,x:.39,y:.53,r:7},{n:'Syndicat des Rivières',t:2,x:.78,y:.46,r:7},{n:'Maison des Territoires',t:2,x:.62,y:.15,r:7},{n:'Office du Pays Vert',t:2,x:.29,y:.88,r:6},{n:'Pôle Mobilité Rural',t:2,x:.88,y:.80,r:6}
 ];
